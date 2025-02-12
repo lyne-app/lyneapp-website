@@ -148,16 +148,17 @@ function Home() {
                             Join thousands of others finding meaningful connections in the diaspora.
                         </p>
                         {/*Join the waitlist*/}
-                        <form id="waitlist-form" className="flex justify-center space-x-4 my-8">
+                        <form id="waitlist-form"
+                              className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 my-8">
                             <input
                                 type="email"
                                 placeholder="Enter your email"
-                                className="px-6 py-3 rounded-lg border border-gray-300 w-96"
+                                className="px-4 py-2 md:px-6 md:py-3 rounded-lg border border-gray-300 w-full md:w-96"
                                 required
                             />
                             <button
                                 type="submit"
-                                className="bg-black text-white px-8 py-3 rounded-lg"
+                                className="bg-black text-white px-6 py-2 md:px-8 md:py-3 rounded-lg"
                             >
                                 Join the Waitlist
                             </button>
