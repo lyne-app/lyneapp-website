@@ -90,7 +90,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center">
-                        <h3 className="text-4xl font-bold mb-6">Match-made on Lyne.</h3>
+                        <h3 className="text-4xl font-serif font-bold mb-6">Match-made on Lyne.</h3>
                         <p className="text-xl text-gray-600">
                             Our smart algorithm connects you with people who share your cultural background, values, and
                             interests. Find your perfect match in the diaspora.
@@ -99,7 +99,7 @@ function Home() {
 
                     {/* Chat Feature */}
                     <div className="flex flex-col justify-center md:order-1">
-                        <h3 className="text-4xl font-bold mb-6">Start meaningful conversations</h3>
+                        <h3 className="text-4xl font-serif font-bold mb-6">Start meaningful conversations</h3>
                         <p className="text-xl text-gray-600">
                             Break the ice naturally with people who understand your journey. Share stories, experiences,
                             and create lasting connections.
@@ -153,7 +153,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center">
-                        <h3 className="text-4xl font-bold mb-6">Show you care</h3>
+                        <h3 className="text-4xl font-serif font-bold mb-6">Show you care</h3>
                         <p className="text-xl text-gray-600">
                             Make your interest known with virtual gifts and thoughtful gestures. Create special moments
                             that lead to meaningful connections.
