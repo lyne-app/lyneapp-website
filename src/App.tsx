@@ -45,15 +45,14 @@ function App() {
                 <div className={`mobile-menu md:flex md:items-center md:space-x-8 ${isOpen ? 'block' : 'hidden'} 
                                  absolute md:relative top-full left-0 right-0 bg-white md:bg-transparent 
                                  shadow-lg md:shadow-none z-40 md:z-auto`}>
-                    <div
-                        className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 py-4 md:py-0">
-                        <Link to="/about" onClick={() => setIsOpen(false)}
-                              className="text-gray-600 hover:text-black w-full md:w-auto text-center py-2 md:py-0 font-bold">About</Link>
-                        <Link to="/features" onClick={() => setIsOpen(false)}
-                              className="text-gray-600 hover:text-black w-full md:w-auto text-center py-2 md:py-0 font-bold">Features</Link>
-                        <Link to="/help" onClick={() => setIsOpen(false)}
-                              className="text-gray-600 hover:text-black w-full md:w-auto text-center py-2 md:py-0 font-bold">Help?</Link>
-                    </div>
+<div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8 py-4 md:py-0">
+    <Link to="/about" onClick={() => setIsOpen(false)}
+          className="text-gray-600 hover:text-black w-full md:w-auto text-center py-2 md:py-0 font-bold font-serif">About</Link>
+    <Link to="/features" onClick={() => setIsOpen(false)}
+          className="text-gray-600 hover:text-black w-full md:w-auto text-center py-2 md:py-0 font-bold font-serif">Features</Link>
+    <Link to="/help" onClick={() => setIsOpen(false)}
+          className="text-gray-600 hover:text-black w-full md:w-auto text-center py-2 md:py-0 font-bold font-serif">Help?</Link>
+</div>
                 </div>
             </nav>
 
