@@ -1,11 +1,11 @@
 import React from 'react';
-import {Gift, Heart, MessageCircle, Store as PlayStore, Store as AppStore, UserCircle2} from 'lucide-react';
+import {Gift, Heart, MessageCircle, UserCircle2} from 'lucide-react';
 
 function Home() {
     return (
         <>
             {/* Hero Section */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-1">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                     <div className="flex-1">
                         <h2 className="text-6xl font-serif font-bold mb-8">
@@ -16,21 +16,17 @@ function Home() {
                             connections in the diaspora.
                         </p>
                         <div className="flex space-x-4 mb-8">
-                            <button disabled
-                                    className="opacity-50 cursor-not-allowed bg-black text-white px-6 py-3 rounded-lg inline-flex items-center space-x-2">
-                                <AppStore className="w-5 h-5"/>
-                                <span>App Store</span>
-                            </button>
-                            <button disabled
-                                    className="opacity-50 cursor-not-allowed bg-black text-white px-6 py-3 rounded-lg inline-flex items-center space-x-2">
-                                <PlayStore className="w-5 h-5"/>
-                                <span>Google Play</span>
-                            </button>
+                            <a href="#">
+                                <img src="./../images/app-store.png" alt="App Store" className="w-32 h-auto"/>
+                            </a>
+                            <a href="#">
+                                <img src="./../images/google-play.png" alt="App Store" className="w-32 h-auto"/>
+                            </a>
                         </div>
                         {/* Add a join the waitlist button here that takes you to the bottom of the screen*/}
                         <button
                             onClick={() => document.getElementById('waitlist-form').scrollIntoView({behavior: 'smooth'})}
-                            className="bg-black text-white px-6 py-3 rounded-lg"
+                            className="bg-orange-600 text-white px-6 py-3 rounded-lg"
                         >
                             Join the Waitlist
                         </button>
@@ -49,8 +45,20 @@ function Home() {
                                     </div>
                                 </div>
                                 <div className="grid grid-cols-2 gap-3">
-                                    <div className="aspect-square bg-gray-100 rounded-xl"></div>
-                                    <div className="aspect-square bg-gray-100 rounded-xl"></div>
+                                    <div className="aspect-square rounded-xl overflow-hidden">
+                                        <img
+                                            src="/images/woman.png?auto=format&fit=crop&q=80&w=400&h=400"
+                                            alt="Profile 1"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
+                                    <div className="aspect-square rounded-xl overflow-hidden">
+                                        <img
+                                            src="/images/man.png?auto=format&fit=crop&q=80&w=400&h=400"
+                                            alt="Profile 2"
+                                            className="w-full h-full object-cover"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -70,9 +78,12 @@ function Home() {
                                         <UserCircle2 className="w-8 h-8 text-orange-600"/>
                                         <h4 className="font-semibold">Profile</h4>
                                     </div>
-                                    <div className="space-y-3">
-                                        <div className="h-4 bg-gray-100 rounded-full w-3/4"></div>
-                                        <div className="h-4 bg-gray-100 rounded-full w-1/2"></div>
+                                    <div className="flex justify-center items-center h-40 p-4">
+                                        <img
+                                            src="/images/couple-2.png?auto=format&fit=crop&q=80&w=400&h=400"
+                                            alt="Profile example"
+                                            className="object-cover rounded-xl w-50 h-44"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -121,9 +132,21 @@ function Home() {
                                         <h4 className="font-semibold">Send a Gift</h4>
                                     </div>
                                     <div className="grid grid-cols-3 gap-3">
-                                        <div className="aspect-square bg-gray-100 rounded-xl"></div>
-                                        <div className="aspect-square bg-gray-100 rounded-xl"></div>
-                                        <div className="aspect-square bg-gray-100 rounded-xl"></div>
+                                        <img
+                                            src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=200&h=200"
+                                            alt="Gift"
+                                            className="w-full aspect-square object-cover rounded-xl"
+                                        />
+                                        <img
+                                            src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&q=80&w=200&h=200"
+                                            alt="Gift"
+                                            className="w-full aspect-square object-cover rounded-xl"
+                                        />
+                                        <img
+                                            src="/images/bouquet.png?auto=format&fit=crop&q=80&w=200&h=200"
+                                            alt="Gift"
+                                            className="w-full aspect-square object-cover rounded-xl"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -158,23 +181,19 @@ function Home() {
                             />
                             <button
                                 type="submit"
-                                className="bg-black text-white px-6 py-2 md:px-8 md:py-3 rounded-lg"
+                                className="bg-orange-600 text-white px-6 py-2 md:px-8 md:py-3 rounded-lg"
                             >
                                 Join the Waitlist
                             </button>
                         </form>
-                        {/*<div className="flex justify-center space-x-6">*/}
-                        {/*    <button disabled*/}
-                        {/*            className="opacity-50 cursor-not-allowed bg-black text-white px-8 py-4 rounded-xl inline-flex items-center space-x-2">*/}
-                        {/*        <AppStore className="w-5 h-5"/>*/}
-                        {/*        <span>Download on App Store</span>*/}
-                        {/*    </button>*/}
-                        {/*    <button disabled*/}
-                        {/*            className="opacity-50 cursor-not-allowed bg-black text-white px-8 py-4 rounded-xl inline-flex items-center space-x-2">*/}
-                        {/*        <PlayStore className="w-5 h-5"/>*/}
-                        {/*        <span>Get it on Google Play</span>*/}
-                        {/*    </button>*/}
-                        {/*</div>*/}
+                        <div className="flex justify-center space-x-4 pt-4">
+                            <a href="#">
+                                <img src="./../images/app-store.png" alt="App Store" className="w-32 h-auto"/>
+                            </a>
+                            <a href="#">
+                                <img src="./../images/google-play.png" alt="Google Play" className="w-32 h-auto"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
