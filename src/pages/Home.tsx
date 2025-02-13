@@ -1,5 +1,11 @@
-import React from 'react';
 import {Gift, Heart, MessageCircle, UserCircle2} from 'lucide-react';
+import appStore from './../images/app-store.png';
+import googlePlay from './../images/google-play.png';
+import woman from './../images/woman.png';
+import man from './../images/man.png';
+import couple from './../images/couple-2.png';
+import bouquet from './../images/bouquet.png';
+
 
 function Home() {
     return (
@@ -17,10 +23,10 @@ function Home() {
                         </p>
                         <div className="flex space-x-4 mb-8">
                             <a href="#">
-                                <img src="src/images/google-play.png" alt="App Store" className="w-32 h-auto"/>
+                                <img src={googlePlay} alt="App Store" className="w-32 h-auto"/>
                             </a>
                             <a href="#">
-                                <img src="src/images/app-store.png" alt="App Store" className="w-32 h-auto"/>
+                                <img src={appStore} alt="App Store" className="w-32 h-auto"/>
                             </a>
                         </div>
                         {/* Add a join the waitlist button here that takes you to the bottom of the screen*/}
@@ -47,14 +53,14 @@ function Home() {
                                 <div className="grid grid-cols-2 gap-3">
                                     <div className="aspect-square rounded-xl overflow-hidden">
                                         <img
-                                            src="/src/images/woman.png?auto=format&fit=crop&q=80&w=400&h=400"
+                                            src={woman}
                                             alt="Profile 1"
                                             className="w-full h-full object-cover"
                                         />
                                     </div>
                                     <div className="aspect-square rounded-xl overflow-hidden">
                                         <img
-                                            src="/src/images/man.png?auto=format&fit=crop&q=80&w=400&h=400"
+                                            src={man}
                                             alt="Profile 2"
                                             className="w-full h-full object-cover"
                                         />
@@ -80,7 +86,7 @@ function Home() {
                                     </div>
                                     <div className="flex justify-center items-center h-40 p-4">
                                         <img
-                                            src="/src/images/couple-2.png?auto=format&fit=crop&q=80&w=400&h=400"
+                                            src={couple}
                                             alt="Profile example"
                                             className="object-cover rounded-xl w-50 h-44"
                                         />
@@ -143,7 +149,7 @@ function Home() {
                                             className="w-full aspect-square object-cover rounded-xl"
                                         />
                                         <img
-                                            src="/src/images/bouquet.png?auto=format&fit=crop&q=80&w=200&h=200"
+                                            src={bouquet}
                                             alt="Gift"
                                             className="w-full aspect-square object-cover rounded-xl"
                                         />
@@ -188,10 +194,10 @@ function Home() {
                         </form>
                         <div className="flex justify-center space-x-4 pt-4">
                             <a href="#">
-                                <img src="src/images/google-play.png" alt="App Store" className="w-32 h-auto"/>
+                                <img src={googlePlay} alt="App Store" className="w-32 h-auto"/>
                             </a>
                             <a href="#">
-                                <img src="src/images/app-store.png" alt="Google Play" className="w-32 h-auto"/>
+                                <img src={appStore} alt="Google Play" className="w-32 h-auto"/>
                             </a>
                         </div>
                     </div>
