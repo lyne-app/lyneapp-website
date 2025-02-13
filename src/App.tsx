@@ -6,7 +6,7 @@ import Features from './pages/Features';
 import Help from './pages/Help';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
-import logo from './../images/lyneapp-1-logo.png'; // Import the image
+import logo from './images/lyneapp-1-logo.png'; // Import the image
 
 function App() {
     const [isOpen, setIsOpen] = useState(false);
