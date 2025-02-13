@@ -1,4 +1,3 @@
-import React from 'react';
 import {Eye, FileText, Lock, Shield} from 'lucide-react';
 
 function Privacy() {

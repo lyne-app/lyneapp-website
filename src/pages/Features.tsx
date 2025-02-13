@@ -1,4 +1,3 @@
-import React from 'react';
 import {Gift, Globe2, Heart, MessageCircle, Shield, Sparkles, UserCircle2, Users} from 'lucide-react';
 
 function Features() {

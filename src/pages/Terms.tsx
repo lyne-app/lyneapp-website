@@ -1,4 +1,3 @@
-import React from 'react';
 import {AlertCircle, FileText, HelpCircle, Shield} from 'lucide-react';
 
 function Terms() {

@@ -1,4 +1,3 @@
-import React from 'react';
 import {Globe2, Heart, Users} from 'lucide-react';
 
 function About() {
