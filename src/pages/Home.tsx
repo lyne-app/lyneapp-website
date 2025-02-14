@@ -3,8 +3,11 @@ import appStore from './../images/app-store.png';
 import googlePlay from './../images/google-play.png';
 import woman from './../images/woman.png';
 import man from './../images/man.png';
-import couple from './../images/couple-2.png';
+import woman1 from './../images/woman-1.png';
+import man3 from './../images/man-3.png';
 import bouquet from './../images/bouquet.png';
+import bouquet1 from './../images/bouquet-1.png';
+import chat from './../images/chat.png';
 
 
 function Home() {
@@ -84,11 +87,16 @@ function Home() {
                                         <UserCircle2 className="w-8 h-8 text-orange-600"/>
                                         <h4 className="font-semibold">Profile</h4>
                                     </div>
-                                    <div className="flex justify-center items-center h-40 p-4">
+                                    <div className="flex justify-center items-center space-x-4 p-4">
                                         <img
-                                            src={couple}
-                                            alt="Profile example"
-                                            className="object-cover rounded-xl w-50 h-44"
+                                            src={woman1}
+                                            alt="Woman profile"
+                                            className="object-cover rounded-xl w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52"
+                                        />
+                                        <img
+                                            src={man3}
+                                            alt="Man profile"
+                                            className="object-cover rounded-xl w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52"
                                         />
                                     </div>
                                 </div>
@@ -119,9 +127,12 @@ function Home() {
                                         <MessageCircle className="w-8 h-8 text-orange-600"/>
                                         <h4 className="font-semibold">Messages</h4>
                                     </div>
-                                    <div className="space-y-3">
-                                        <div className="h-10 bg-gray-100 rounded-xl w-3/4"></div>
-                                        <div className="h-10 bg-gray-100 rounded-xl w-1/2"></div>
+                                    <div className="rounded-xl overflow-hidden">
+                                        <img
+                                            src={chat}
+                                            alt="Chat messages"
+                                            className="w-full h-auto object-contain max-h-[300px] sm:max-h-[400px] md:max-h-[500px] lg:max-h-[600px]"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -137,22 +148,21 @@ function Home() {
                                         <Gift className="w-8 h-8 text-orange-600"/>
                                         <h4 className="font-semibold">Send a Gift</h4>
                                     </div>
-                                    <div className="grid grid-cols-3 gap-3">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&q=80&w=200&h=200"
-                                            alt="Gift"
-                                            className="w-full aspect-square object-cover rounded-xl"
-                                        />
-                                        <img
-                                            src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&q=80&w=200&h=200"
-                                            alt="Gift"
-                                            className="w-full aspect-square object-cover rounded-xl"
-                                        />
-                                        <img
-                                            src={bouquet}
-                                            alt="Gift"
-                                            className="w-full aspect-square object-cover rounded-xl"
-                                        />
+                                    <div className="grid grid-cols-2 gap-4">
+                                        <div className="aspect-square rounded-xl overflow-hidden bg-gray-100">
+                                            <img
+                                                src={bouquet1}
+                                                alt="Gift"
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </div>
+                                        <div className="aspect-square rounded-xl overflow-hidden bg-gray-100">
+                                            <img
+                                                src={bouquet}
+                                                alt="Gift"
+                                                className="w-full h-full object-contain"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
